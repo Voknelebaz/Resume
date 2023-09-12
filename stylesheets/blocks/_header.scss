@@ -1,1 +1,55 @@
-@import "../base/variables";
+.header {
+    padding: 3.875rem 0;
+    // .header__container
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+    // .header__menu
+    &__menu {
+    }
+}
+
+// .logo__link
+.logo__link {
+    font-family: "Vibur", sans-serif;
+    color: $main-color;
+    line-height: 3rem;
+    font-weight: 500;
+    font-size: 3.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo__link:hover {
+    color: $main-color-hover;
+    text-decoration: underline;
+}
+
+.menu {
+    // .menu__list
+    &__list {
+        display: flex;
+        gap: 1.25rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    // .menu__item
+    &__item {
+    }
+
+    // .menu__item-link
+    &__item-link {
+        color: $main-color;
+        font-size: 1.75rem;
+        text-decoration: none;
+    }
+    &__item-link:hover {
+        color: $main-color-hover;
+        text-decoration: underline;
+    }
+}

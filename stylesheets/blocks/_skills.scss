@@ -1,0 +1,47 @@
+.skills {
+    margin-top: 3.875rem;
+    // .skills__container
+
+    &__container {
+    }
+
+    // .skills__body
+
+    &__body {
+       
+    }
+    &__title {
+        font-family: "Poppins", sans-serif;
+        color: $title-color;
+        font-size: 4.625rem;
+        font-weight: 800;
+        line-height: 6.25rem; /* 135.135% */
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    // .skills__slider-slide
+
+    &__slider-slide {
+    }
+    &__slider-wrapper {
+        text-align: center;
+        
+    }
+    // .skills__slide-image
+
+    &__slide-image {
+    }
+    &__slide-image img {
+        width: 150px;
+        height: 100px;
+    }
+    // .skills__slide-text
+
+    &__slide-text {
+        color: $main-color;
+        font-size: 3.625rem;
+        font-weight: 800;
+        line-height: 6.25rem;
+        margin-bottom: 2rem;
+    }
+}
