@@ -1,0 +1,105 @@
+.projects {
+    margin: 2.875rem auto;
+    // .projects__container
+    &__container {
+    }
+    // .projects__body
+    &__body {
+    }
+    // .projects__title
+    &__title {
+        font-family: "Poppins", sans-serif;
+        color: $title-color;
+        font-size: 4.625rem;
+        font-weight: 800;
+        line-height: 6.25rem; /* 135.135% */
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__card-link {
+        text-decoration: none;
+    }
+    // .projects__cards
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    // .projects__card
+    &__card {
+        display: block;
+        text-decoration: none;
+
+        max-width: 27rem;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 12px;
+    }
+    // .projects__card-image
+    &__card-image {
+    }
+    &__card-hover {
+        display: none;
+    }
+    &__card-image:hover &__card-hover {
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    &__card-image img {
+        width: 100%;
+    }
+    // .projects__card-title
+    &__card-title {
+        font-family: "Poppins", sans-serif;
+        color: $title-color;
+        font-size: 1.625rem;
+        font-weight: 800;
+
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    // .projects__card-text
+    &__card-text {
+        color: $main-color;
+        font-size: 1.625rem;
+        text-align: justify;
+    }
+    @media (max-width: 25rem) {
+        &__card-text {
+            font-size: 1.3rem;
+        }
+    }
+}
+.img-overlay {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.img-overlay:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: $main-color;
+    font-size: 4.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}

@@ -1,12 +1,10 @@
 .about {
     // .about__container
-    padding: 1.875rem 0;
+    padding: 2.875rem 0;
     background-color: $bg-section;
     &__container {
     }
-
     // .about__body
-
     &__body {
         display: flex;
         justify-content: space-between;
@@ -15,12 +13,9 @@
     }
 
     // .about__info
-
     &__info {
     }
-
     // .about__title
-
     &__title {
         font-family: "Poppins", sans-serif;
         color: $title-color;
@@ -31,7 +26,6 @@
     }
 
     // .about__text
-
     &__text {
         color: $main-color;
         font-family: Montserrat;
@@ -44,11 +38,29 @@
         margin-bottom: 1.5rem;
     }
     // .about__image
-
     &__image {
         max-width: 32rem;
     }
     &__image img {
         width: 100%;
+    }
+    @media (max-width: 51.25rem) {
+        &__body {
+            flex-direction: column;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+    @media (max-width: 26.5rem) {
+        &__title {
+            font-size: 2.625rem;
+            line-height: 2.25rem;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 12px) {
+    .about {
     }
 }

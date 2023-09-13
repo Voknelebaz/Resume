@@ -1,5 +1,6 @@
 .skills {
-    margin-top: 3.875rem;
+    margin: 2.875rem 0;
+    background-color: $bg-section;
     // .skills__container
 
     &__container {
@@ -8,7 +9,6 @@
     // .skills__body
 
     &__body {
-       
     }
     &__title {
         font-family: "Poppins", sans-serif;
@@ -25,15 +25,33 @@
     }
     &__slider-wrapper {
         text-align: center;
-        
+    }
+    @media (max-width: 53.125rem) {
+        &__slider {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        &__slider-slide {
+            max-width: 200px;
+        }
+        &__slide-text {
+            color: $main-color;
+            font-size: 3.625rem;
+            font-weight: 800;
+            line-height: 6.25rem;
+            margin-bottom: 2rem;
+        }
     }
     // .skills__slide-image
 
     &__slide-image {
     }
     &__slide-image img {
-        width: 150px;
-        height: 100px;
+        width: 9.375rem;
+        height: 6.25rem;
     }
     // .skills__slide-text
 
@@ -43,5 +61,22 @@
         font-weight: 800;
         line-height: 6.25rem;
         margin-bottom: 2rem;
+    }
+    @media (max-width: 53.125rem) {
+        &__slider {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        &__slider-slide {
+            max-width: 200px;
+        }
+        &__slide-text {
+            font-size: 2.625rem;
+            line-height: 2.25rem;
+            margin-bottom: 1rem;
+        }
     }
 }

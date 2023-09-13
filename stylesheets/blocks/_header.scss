@@ -11,8 +11,17 @@
     // .header__menu
     &__menu {
     }
+    @media (max-width: 55.5625rem) {
+        &__container {
+            gap: 2rem;
+        }
+    }
 }
-
+@media (max-width:55.5625rem) {
+    .header {
+        padding: 1.875rem 0;
+    }
+}
 // .logo__link
 .logo__link {
     font-family: "Vibur", sans-serif;
