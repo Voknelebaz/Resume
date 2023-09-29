@@ -31,7 +31,6 @@
     &__card {
         display: block;
         text-decoration: none;
-
         max-width: 27rem;
         padding: 10px;
         border: 2px solid black;
@@ -39,6 +38,7 @@
     }
     // .projects__card-image
     &__card-image {
+        
     }
     &__card-hover {
         display: none;
@@ -51,13 +51,13 @@
     &__card-image img {
         width: 100%;
     }
+
     // .projects__card-title
     &__card-title {
         font-family: "Poppins", sans-serif;
         color: $title-color;
         font-size: 1.625rem;
         font-weight: 800;
-
         margin-bottom: 2rem;
         text-align: center;
     }
